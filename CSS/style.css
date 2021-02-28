@@ -91,6 +91,8 @@ img
 {
     font-size: 2rem;
     color: var(--black);
+    padding: 0 0.5rem;
+    border: 2px solid var(--black);
 }
 
 .navigation .logo span
@@ -181,10 +183,10 @@ img
         margin-right: 0.3rem;
     }
 
-    .navigation .logo
+    /* .navigation .logo
     {
         font-size: 1.8rem;
-    }
+    } */
 
     .navigation .nav-item
     {
@@ -224,6 +226,58 @@ img
     .navigation .nav-menu.show
     {
         left: 0;
+    }
+
+    .navigation .nav-list
+    {
+        flex-direction: column;
+        align-items: start;
+        padding: 2rem 0;
+    }
+
+    .navigation .nav-top
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--yellow);
+        padding: 1.6rem 2rem;
+    }
+
+    .navigation .nav-top .logo h1
+    {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .navigation .nav-top .logo span
+    {
+        color: var(--black);
+    }
+
+    .navigation .hamburger
+    {
+        display: block;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    .navigation .close
+    {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navigation .nav-item:not(:last-child)
+    {
+        margin-bottom: 1    rem;
+    }
+
+    .navigation .nav-link
+    {
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 1rem 2rem;
     }
 }
 
