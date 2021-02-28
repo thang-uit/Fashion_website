@@ -6,7 +6,8 @@
     --grey: #444;
     --grey2: #959595;
     --grey-alt: #d1e2e9;
-    --yellow: #ffd800;
+    --yellow: #F9D836;
+    --Star_rating: #ecc500;
     --green: #59b210;
 }
 
@@ -74,61 +75,62 @@ img
     }
 }
 
-.navigation
+.navigation 
 {
     padding: 1.6rem 0;
 }
 
-.nav-center
+.navigation .nav-center
 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.logo
+.navigation .logo
 {
+    font-size: 2rem;
     color: var(--black);
 }
 
-.logo span
+.navigation .logo span
 {
-    color: var(--pink);
+    color: var(--yellow);
 }
 
-.nav-top
+.navigation .nav-top
 {
     display: none;
 }
 
-.nav-list
+.navigation .nav-list
 {
     display: flex;
     align-items: center;
 }
 
-.nav-item:not(:last-child)
+.navigation .nav-item:not(:last-child)
 {
     margin-right: 0.5rem;
 }
 
-.nav-item
+.navigation .nav-item
 {
     padding: 0 1rem;
 }
 
-.nav-link
+.navigation .nav-link
 {
     position: relative;
     display: inline-block;
     padding: 0.5rem 0 0.2rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--black);
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
 }
 
-.nav-link::after
+.navigation .nav-link::after
 {
     position: absolute;
     content: "";
@@ -136,14 +138,109 @@ img
     height: 2px;
     top: 90%;
     left: 0;
-    background-color: var(--pink);
+    background-color: var(--yellow);
     transition: transform 0.5s;
-    transform: scaleX(0);
-    transform-origin: left;
+    transform: scale(0);
 }
 
-.nav-link:hover::after
+.navigation .nav-link:hover::after
 {
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: scale(1);
+    transform-origin: middle center;
 }
+
+.navigation .nav-icons span:not(:last-child)
+{
+    margin-right: 0.5rem;
+}
+
+.navigation .nav-icons span
+{
+    font-size: 1.6rem;
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation .nav-icons span:hover
+{
+    background-color: var(--yellow);
+}
+
+.navigation .hamburger
+{
+    display: none;
+}
+
+@media only screen and (max-width: 940px)
+{
+    .navigation .nav-item:not(:last-child)
+    {
+        margin-right: 0.3rem;
+    }
+
+    .navigation .logo
+    {
+        font-size: 1.8rem;
+    }
+
+    .navigation .nav-item
+    {
+        padding: 0 0.5rem;
+    }
+
+    .navigation .nav-link
+    {
+        font-size: 1.4rem;
+    }
+
+    .navigation .nav-icons span
+    {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .navigation.show
+    {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .navigation .nav-menu
+    {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 80%;
+        height: 100vh;
+        z-index: 9999;
+        background-color: var(--white);
+        transition: all 0.5s linear;
+    }
+
+    .navigation .nav-menu.show
+    {
+        left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
