@@ -3,6 +3,7 @@
     --white: #ffffff;
     --black: #222;
     --pink: #f60091;
+    --red: #ff0000;
     --grey: #444;
     --grey2: #959595;
     --grey-alt: #d1e2e9;
@@ -34,6 +35,7 @@ body
     font-weight: 400;
     color: var(--black);
     background-color: var(--white);
+    height: 100vh;
     z-index: -1;
 }
 
@@ -246,7 +248,7 @@ img
 
     .navigation .nav-top .logo h1
     {
-        font-size: 1.8rem;
+        font-size: 3rem;
         /* font-weight: 500; */
     }
 
@@ -264,8 +266,15 @@ img
 
     .navigation .close
     {
-        font-size: 2rem;
+        font-size: 3rem;
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navigation .close:hover
+    {
+        transform: scale(1.2) rotate(90deg);
+        color: var(--red);
     }
 
     .navigation .nav-item:not(:last-child)
