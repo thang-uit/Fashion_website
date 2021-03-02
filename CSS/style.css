@@ -49,6 +49,11 @@ a
     text-decoration: none;
 }
 
+a:visited
+{
+    color: var(--black);
+}
+
 img
 {
     max-width: 100%;
@@ -77,6 +82,11 @@ img
     }
 }
 
+
+
+/*-------------------
+Navigation
+-------------------*/
 .navigation 
 {
     padding: 1.6rem 0;
@@ -316,13 +326,75 @@ img
 
 
 
+/*-------------------
+Hero (Slider)
+-------------------*/
+.hero, .glide__hero, .banner
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--grey-alt);
+}
 
+.banner img
+{
+    position: absolute;
+    bottom: 0;
+}
 
+.banner img.special_01
+{
+    width: 85rem;
+    right: -5%;
+}
 
+.banner-content
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(25%, -50%);
+}
 
+.banner-content span
+{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
 
+.banner-content h1
+{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
 
+.banner-content h3
+{
+    font-weight: 400;
+    color: var(--grey);
+    margin-bottom: 2rem;
+}
 
+.btn-1
+{
+    display: inline-block;
+    border: 1px solid var(--black);
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.btn-1:hover
+{
+    background-color: var(--black);
+    color: var(--white);
+}
 
 
 
