@@ -5,6 +5,7 @@
     --pink: #f60091;
     --red: #ff0000;
     --grey: #444;
+    --grey1: #555;
     --grey2: #959595;
     --grey-alt: #d1e2e9;
     --yellow: #F9D836;
@@ -87,6 +88,14 @@ img
 /*-------------------
 Navigation
 -------------------*/
+/* .header
+{
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+    z-index: 999999;
+} */
+
 .navigation 
 {
     padding: 1.6rem 0;
@@ -97,6 +106,17 @@ Navigation
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.navigation.fix-nav
+{
+    position: sticky;
+    top: 0;
+    /* left: 0; */
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
 }
 
 .navigation .logo
@@ -378,10 +398,12 @@ Hero (Slider)
     margin-bottom: 2rem;
 }
 
-.btn-1
+.button-group .btn-1
 {
     display: inline-block;
     border: 1px solid var(--black);
+    background-color: transparent;
+    color: var(--black);
     padding: 1.2rem 3rem;
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -390,14 +412,81 @@ Hero (Slider)
     transition: all 0.3s linear;
 }
 
-.btn-1:hover
+.button-group .btn-1:first-child
 {
     background-color: var(--black);
     color: var(--white);
 }
 
+.button-group .btn-1:hover
+{
+    background-color: var(--black);
+    color: var(--white);
+}
 
+.button-group .btn-1:first-child:hover
+{
+    background-color: transparent;
+    color: var(--black);
+}
 
+/* Glide arrows */
+.glide__arrow
+{
+    position: absolute;
+    top: 50%;
+    background-color: var(--grey1);
+    border: 1px solid var(--black);
+    outline: none;
+    padding: 1.5rem 1.6rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+}
+
+.glide__arrow--left
+{
+    left: 3%;
+}
+
+.glide__arrow--right
+{
+    right: 3%;
+}
+
+.glide__arrow:hover
+{
+    background-color: transparent;
+    color: var(--black);
+}
+
+/* Glide bullets */
+.glide__bullets
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+
+.glide__bullets .glide__bullet
+{
+    cursor: pointer;
+    outline: none;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--black);
+}
+
+.glide__bullets .glide__bullet:hover
+{
+    background-color: var(--black);
+}
 
 
 

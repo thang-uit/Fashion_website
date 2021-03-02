@@ -18,4 +18,16 @@
         nav.classList.remove("show");
         document.body.classList.remove("show");
     });
+
+    // window.addEventListener("scroll", () =>
+    // {
+    //     if(window.pageYOffset > 5)
+    //     {
+    //         navigation.classList.add("fix-nav");
+    //     }
+    //     else
+    //     {
+    //         navigation.classList.remove("fix-nav");
+    //     }
+    // });
 })();
