@@ -10,7 +10,7 @@
             perView: 1,
             autoPlay: true,
             hoverpause: true,
-            animationDuration: 1000,
+            animationDuration: 900,
             animationTimingFunc: "linear"
         }).mount();
     }

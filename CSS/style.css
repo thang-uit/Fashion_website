@@ -402,12 +402,14 @@ Hero (Slider)
 {
     display: inline-block;
     border: 1px solid var(--black);
+    margin: 1rem auto;
     background-color: transparent;
     color: var(--black);
     padding: 1.2rem 3rem;
     font-size: 1.6rem;
     text-transform: uppercase;
     font-weight: 500;
+    word-break: break-all;
     cursor: pointer;
     transition: all 0.3s linear;
 }
@@ -487,6 +489,70 @@ Hero (Slider)
 {
     background-color: var(--black);
 }
+
+@media only screen and (max-width: 1200px)
+{
+    .hero, .glide__hero, .banner
+    {
+        height: 90vh;
+    }
+
+    .banner img.special_01
+    {
+        width: 60rem;
+    }
+}
+
+@media only screen and (max-width: 995px)
+{
+    .hero, .glide__hero, .banner
+    {
+        height: 90vh;
+    }
+
+    .banner-content
+    {
+        width: 60%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .banner img.special_01
+    {
+        left: 50%;
+        width: 50rem;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .banner-content
+    {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 567px)
+{
+    .hero, .glide__hero, .banner
+    {
+        height: 95vh;
+    }
+
+    .banner-content h1
+    {
+        font-size: 3rem;    
+    }
+
+    .banner-content h3
+    {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;    
+    }
+}
+
 
 
 
