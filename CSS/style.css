@@ -26,6 +26,7 @@ html
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body
@@ -36,7 +37,7 @@ body
     font-weight: 400;
     color: var(--black);
     background-color: var(--white);
-    height: 100vh;
+    height: 100%;
     z-index: -1;
 }
 
@@ -88,14 +89,6 @@ img
 /*-------------------
 Navigation
 -------------------*/
-/* .header
-{
-    position: sticky;
-    top: 0;
-    background-color: var(--white);
-    z-index: 999999;
-} */
-
 .navigation 
 {
     padding: 1.6rem 0;
@@ -108,15 +101,15 @@ Navigation
     justify-content: space-between;
 }
 
-.navigation.fix-nav
+.fix-nav
 {
-    position: sticky;
+    position: fixed;
     top: 0;
-    /* left: 0; */
+    left: 0;
     width: 100%;
     background-color: var(--white);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    z-index: 99999;
+    z-index: 999999;
 }
 
 .navigation .logo
@@ -632,13 +625,81 @@ Category
     margin-bottom: 1rem;
 }
 
+.category-box .content a
+{
+    display: inline-block;
+    color: var(--white);
+    text-transform: uppercase;
+    padding: 0.7rem 1.3rem;
+    border: 1px solid var(--white);
+    transition: all 0.3s linear;
+}
+
+.category-box .content a:hover
+{
+    border: 1px solid var(--black);
+    background-color: var(--black);
+}
+
+@media only screen and (max-width: 1200px)
+{
+    .category-box .content h2
+    {
+        font-size: 2rem;
+    }
+
+    .category-box .content span
+    {
+        font-size: 1.5rem;
+    }
+
+    .category-box .content a
+    {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 995px)
+{
+    .category-center
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    .category-box
+    {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    .category-center
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .category-box
+    {
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    .category-box .content
+    {
+        top: 20%; 
+    }
+}
 
 
 
-
-
-
-
+/*-------------------
+Sort Products
+-------------------*/
 
 
 

@@ -5,6 +5,7 @@
     openBtn = document.querySelector(".hamburger"),
     closeBtn = document.querySelector(".close");
 
+    // Open Menu
     openBtn.addEventListener("click", () =>
     {
         navigation.classList.add("show");
@@ -19,15 +20,17 @@
         document.body.classList.remove("show");
     });
 
-    // window.addEventListener("scroll", () =>
-    // {
-    //     if(window.pageYOffset > 5)
-    //     {
-    //         navigation.classList.add("fix-nav");
-    //     }
-    //     else
-    //     {
-    //         navigation.classList.remove("fix-nav");
-    //     }
-    // });
+
+    // Fix navbar
+    window.addEventListener("scroll", () =>
+    {
+        if(window.pageYOffset > 1)
+        {
+            navigation.classList.add("fix-nav");
+        }
+        else
+        {
+            navigation.classList.remove("fix-nav");
+        }
+    });
 })();
