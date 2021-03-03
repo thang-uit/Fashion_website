@@ -555,6 +555,90 @@ Hero (Slider)
 
 
 
+/*-------------------
+Category
+-------------------*/
+.section
+{
+    padding: 5rem 0;
+}
+
+.category .title
+{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem; 
+}
+
+.category-center
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.category-box
+{
+    position: relative;
+    border-radius: 0.5rem;
+    height: 25rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.category-box::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 30%, transparent);
+    z-index: 2;
+}
+
+.category-box img
+{
+    height: 27rem;
+    width: 100%;
+    transition: all 0.5s linear;
+}
+
+.category-box:hover img
+{
+    transform: scale(1.2);
+}
+
+.category-box .content
+{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: var(--white);
+    z-index: 3;
+}
+
+.category-box .content h2
+{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.category-box .content span
+{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
 
 
 
