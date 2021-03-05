@@ -75,7 +75,6 @@ img
 
 .container
 {
-    display: flex;
     max-width: 110rem;
     margin: auto;
 }
@@ -239,11 +238,6 @@ Navigation
         margin-right: 0.3rem;
     }
 
-    /* .navigation .logo
-    {
-        font-size: 1.8rem;
-    } */
-
     .navigation .nav-item
     {
         padding: 0 0.5rem;
@@ -253,11 +247,6 @@ Navigation
     {
         font-size: 1.4rem;
     }
-
-    /* .navigation .nav-icons span
-    {
-        font-size: 1.2rem;
-    } */
 }
 
 @media only screen and (max-width: 768px)
@@ -303,7 +292,6 @@ Navigation
     .navigation .nav-top .logo h1
     {
         font-size: 3rem;
-        /* font-weight: 500; */
     }
 
     .navigation .nav-top .logo span
@@ -373,6 +361,11 @@ Navigation
     .navigation .nav-icons
     {
         display: none;
+    }
+
+    .navigation .nav-center .logo
+    {
+        font-size: 1.5rem;
     }
 }
 
@@ -512,7 +505,7 @@ Hero (Slider)
     cursor: pointer;
     outline: none;
     padding: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     border-radius: 50%;
     border: 1px solid var(--black);
 }
