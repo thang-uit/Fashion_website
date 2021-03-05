@@ -819,10 +819,10 @@ Product Center
 -------------------*/
 .product-center
 {
-    display: grid;
+    display: grid; /* Very important! */
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    justify-items: center;
+    grid-gap: 3rem 2rem;
+    justify-content: center; /* Very important! */
 }
 
 .product-center .product-box
@@ -835,9 +835,9 @@ Product Center
     text-align: center;
     border: none;
     border-radius: 5px;
-    /* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
-    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.1);
     padding: 1rem;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.1);
+    word-break: break-all;
 }
 
 .product-header
