@@ -834,7 +834,7 @@ Product Center
     justify-content: center;
     text-align: center;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 1rem;
     box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.1);
     word-break: break-all;
@@ -849,9 +849,14 @@ Product Center
 
 .product-footer h3
 {
-    font-weight: 500;
+    font-weight: 900;
     font-size: 1.6rem;
     color: var(--grey);
+}
+
+.product-footer .rating
+{
+    color: var(--Star_rating);
 }
 
 .product-price h4
