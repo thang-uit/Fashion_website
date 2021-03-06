@@ -42,16 +42,7 @@
 /*------------------------------ Filter products(trend, special, featured) ------------------------------*/
 (() =>
 {
-    const filtercontainer = document.querySelector(".title-container");
-    const filters = document.querySelectorAll(".section-title");
-
-    filtercontainer.addEventListener("click", (event) =>
-    {
-        if(event.target.classList.contains("filter-btn"))
-        {
-            alert("OK");
-        }
-    });
+    
 
     // filters.forEach(item => 
     // {
