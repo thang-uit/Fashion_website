@@ -820,6 +820,7 @@ Product Center
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem 2rem;
     justify-content: center; /* Very important! */
+    justify-items: center;
 }
 
 .product-center .product-box
@@ -829,6 +830,7 @@ Product Center
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     text-align: center;
     border: none;
     border-radius: 10px;
