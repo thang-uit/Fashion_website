@@ -15,7 +15,7 @@
         `
             <div class="product-box">
                 <div class="product-header">
-                    <div class="img-box" style="background-image: url(${image}); background-repeat: no-repeat; background-position: center center; background-size: cover; width: 25rem; height: 25rem;"></div>
+                    <div class="img-box" style="background-image: url(${image}); background-repeat: no-repeat; background-position: center center; background-size: cover; width: 20rem; height: 20rem;"></div>
                 </div>
                 <div class="product-footer">
                     <h3>${title}</h3>
@@ -44,6 +44,7 @@
 
     // Filter product
     const cateContainer = document.querySelector(".sort-category");
+    const productCenter = document.querySelector(".product-center");
     const filterBtns = [ ... document.querySelectorAll(".filter-btn")];
 
     // console.log(filterBtns);
@@ -64,16 +65,30 @@
                     item.classList.remove("active");   
                 });
                 target.classList.add("active");
+                const menuCat = products.filter(product => product.category === getID);
+                productCenter.classList.add("animate__animated", "animate__bounceIn");
+                setTimeout(() => 
+                {
+                    productCenter.classList.remove("animate__animated", "animate__bounceIn");
+                }, 1000);
+                displayProducts(menuCat, productCenter);
             }
         });
     }
+    
+    const latestCenter = document.querySelector(".latest-center");
+    const recentCenter = document.querySelector(".recent-center");
+    const shopCenter = document.querySelector(".shop-center");
 
-    // filtercontainer.addEventListener("click", (event) =>
-    // {
-    //     if(event.target.classList.contains("filter-btn"))
-    //     {
-            
-    //     }
-    // });
+    const filterArray = async (type) => 
+    {
+        const products = await getProducts();
+        return products.filter(product => product.category === type);
+    };
 
+    window.addEventListener("DOMContentLoaded", async () =>
+    {
+        const defaultProducts = await filterArray("trend");
+        displayProducts(defaultProducts, productCenter);
+    });
 })();

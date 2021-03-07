@@ -744,7 +744,7 @@ Sort Products
 
 .section-titles:not(:last-child)
 {
-    margin-right: 5rem;
+    margin-right: 1.5rem;
 }
 
 .section-title
@@ -761,7 +761,6 @@ Sort Products
     font-weight: inherit;
     padding-left: 0.5rem;
     opacity: 0.5;
-    transition: all 0.3s ease-in-out;
 }
 
 .section-title:hover .primary-title, .section-title:hover span.dot, .section-title:hover span.dot::before
@@ -776,7 +775,6 @@ Sort Products
     padding: 0.45rem;
     border: 1px solid var(--black);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
 .section-title span.dot::before
@@ -790,8 +788,7 @@ Sort Products
     background-color: var(--black);
     border: 1px solid var(--black);
     margin: 0.1rem;
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .section-title.active span.dot, .section-title.active span.dot::before, .section-title.active .primary-title
