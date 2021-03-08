@@ -76,9 +76,9 @@
         });
     }
     
-    const latestCenter = document.querySelector(".latest-center");
-    const recentCenter = document.querySelector(".recent-center");
-    const shopCenter = document.querySelector(".shop-center");
+    // const latestCenter = document.querySelector(".latest-center");
+    // const recentCenter = document.querySelector(".recent-center");
+    // const shopCenter = document.querySelector(".shop-center");
 
     const filterArray = async (type) => 
     {
