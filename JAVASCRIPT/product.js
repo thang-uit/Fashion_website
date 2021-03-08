@@ -70,7 +70,7 @@
                 setTimeout(() => 
                 {
                     productCenter.classList.remove("animate__animated", "animate__bounceIn");
-                }, 1000);
+                }, 700);
                 displayProducts(menuCat, productCenter);
             }
         });
