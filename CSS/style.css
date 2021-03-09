@@ -369,6 +369,14 @@ Navigation
     }
 }
 
+@media only screen and (max-width: 350px)
+{
+    .container
+    {
+        margin: 0 -3rem;
+    }
+}
+
 
 
 /*-------------------
@@ -1171,6 +1179,43 @@ Product Center
         grid-row-end: 20;
     }
 }
+
+
+
+/*-------------------
+Brands
+-------------------*/
+.brands li img
+{
+    width: 100%;
+    object-fit: contain;
+    height: 12rem;
+}
+
+@media only screen and (max-width: 770px)
+{
+    .brands li img
+    {
+        height: 10rem;
+    }
+}
+
+@media only screen and (max-width: 550px)
+{
+    .brands li img
+    {
+        height: 6rem;
+    }
+}
+
+@media only screen and (max-width: 350px)
+{
+    .brands li img
+    {
+        height: 4rem;
+    }
+}
+
 
 
 
