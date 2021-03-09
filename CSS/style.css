@@ -358,6 +358,11 @@ Navigation
 
 @media only screen and (max-width: 500px)
 {
+    .container
+    {
+        margin: 0 -4rem;
+    }
+
     .navigation .nav-icons
     {
         display: none;
@@ -366,14 +371,6 @@ Navigation
     .navigation .nav-center .logo
     {
         font-size: 1.5rem;
-    }
-}
-
-@media only screen and (max-width: 350px)
-{
-    .container
-    {
-        margin: 0 -3rem;
     }
 }
 
