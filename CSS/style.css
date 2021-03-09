@@ -1220,6 +1220,99 @@ Brands
 
 
 
+/*-------------------
+Facility
+-------------------*/
+.facility
+{
+    background-color: var(--grey-alt);
+    padding: 6rem 0;
+}
+
+.facility-container
+{
+    display: grid; /* Very important! */
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center; /* Very important! */
+    justify-items: center;
+    align-items: center;
+}
+
+.facility-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.facility-box p
+{
+    text-align: center;
+}
+
+.facility-icon
+{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-bottom: 1.6rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facility-icon::before
+{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0.7rem;
+    background-color: var(--white);
+    z-index: -1;
+}
+
+.facility-icon i
+{
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out; 
+}
+
+.facility-box:hover i
+{
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 998px)
+{
+    .facility-container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem 0;
+    }
+}
+
+@media only screen and (max-width: 630px)
+{
+    .facility-container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
 
 
 
