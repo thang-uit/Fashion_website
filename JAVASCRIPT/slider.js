@@ -1,18 +1,17 @@
 // Slider
 (() =>
 {
-    const slider1 = document.getElementById("glide1");
-    if(slider1)
+    const slider = document.getElementById("glide1");
+    if(slider)
     {
-        new Glide(slider1, 
+        new Glide(slider, 
         {
             type: "carousel",
             startAt: 0,
             perView: 1,
-            autoPlay: true,
-            hoverpause: true,
+            autoplay: 4000,
             animationDuration: 900,
-            animationTimingFunc: "linear"
+            animationTimingFunc: "linear",
         }).mount();
     }
 })();
@@ -30,8 +29,7 @@
             type: "carousel",
             startAt: 0,
             perView: 1,
-            autoPlay: true,
-            hoverpause: false,
+            autoplay: 2000,
             perView: 5,
             animationDuration: 800,
             animationTimingFunc: "linear",
