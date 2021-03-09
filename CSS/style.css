@@ -358,7 +358,7 @@ Navigation
 
 @media only screen and (max-width: 500px)
 {
-    .container
+    .navigation .container
     {
         margin: 0 -4rem;
     }
