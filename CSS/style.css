@@ -562,6 +562,11 @@ Hero (Slider)
     {
         width: 90%;
     }
+
+    .hero .glide__bullets
+    {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 567px)
