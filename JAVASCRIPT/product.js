@@ -78,7 +78,7 @@
     
     // const latestCenter = document.querySelector(".latest-center");
     // const recentCenter = document.querySelector(".recent-center");
-    // const shopCenter = document.querySelector(".shop-center");
+    const shopCenter = document.querySelector(".shop-center");
 
     const filterArray = async (type) => 
     {
@@ -88,7 +88,10 @@
 
     window.addEventListener("DOMContentLoaded", async () =>
     {
+        const products = await getProducts();
         const defaultProducts = await filterArray("trend");
+        
         displayProducts(defaultProducts, productCenter);
+        displayProducts(products, shopCenter);
     });
 })();
