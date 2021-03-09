@@ -76,9 +76,10 @@
         });
     }
     
-    // const latestCenter = document.querySelector(".latest-center");
-    // const recentCenter = document.querySelector(".recent-center");
+    
     const shopCenter = document.querySelector(".shop-center");
+    const latestCenter = document.querySelector(".latest-center");
+    const recentCenter = document.querySelector(".recent-center");
 
     const filterArray = async (type) => 
     {
@@ -90,8 +91,12 @@
     {
         const products = await getProducts();
         const defaultProducts = await filterArray("trend");
-        
+        const latestProducts = await filterArray("latest");
+        const recentProducts = await filterArray("recent");
+
         displayProducts(defaultProducts, productCenter);
-        displayProducts(products, shopCenter);
+        displayProducts(products, shopCenter); // All products
+        displayProducts(latestProducts, latestCenter); // Latest products
+        displayProducts(recentProducts, recentCenter); // Recent products
     });
 })();

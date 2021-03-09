@@ -22,6 +22,7 @@
         document.body.classList.remove("show");
     });
 
+    
 
     // Fix navbar
     window.addEventListener("scroll", () =>
