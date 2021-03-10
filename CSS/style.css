@@ -1312,11 +1312,163 @@ Facility
 
 
 
+/*-------------------
+Popup
+-------------------*/
+.popup
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    transform: scale(0.2);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999999;
+}
 
+.popup.show
+{
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
 
+.popup-content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 55rem;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    padding: 1.6rem;
+    display: table;
+    overflow: hidden;
+    background-color: var(--white);
+}
 
+.popup-close
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    padding: 1.2rem 1.6rem;
+    background-color: var(--grey-alt);
+    border-radius: 50%;
+    cursor: pointer;
+}
 
+.popup-close:hover
+{
+    background-color: var(--red);
+    color: var(--white);
+}
 
+.popup-left
+{
+    display: table-cell;
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+}
 
+.popup-right
+{
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.right-content h1
+{
+    text-transform: capitalize;
+    font-size: 4rem;
+    color: var(--black);
+    margin-bottom: 1.6rem;
+}
+
+.right-content h1 span
+{
+    color: var(--yellow);
+}
+
+.right-content p
+{
+    font-size: 1.8rem;
+    color: var(--grey);
+    margin-bottom: 1.6rem;
+}
+
+.popup-img
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.popup-img img
+{
+    display: block;
+    width: 60rem;
+    height: 45rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.popup-input
+{
+    width: 100%;
+    padding: 1.8rem;
+    margin-bottom: 2rem;
+    border-radius: 3rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    background-color: var(--grey-alt);
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-input:focus
+{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup-right .btn-submit
+{
+    background-color: var(--black);
+    color: var(--white);
+    font-weight: 900;
+    padding: 1.6rem 3rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.popup-right .btn-submit:hover
+{
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+@media only screen and (max-width: 1050px)
+{
+
+}
 
 
