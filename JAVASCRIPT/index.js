@@ -1,4 +1,3 @@
-
 /*------------------------------ Open navbar ------------------------------*/
 (() =>
 {
@@ -39,3 +38,20 @@
 })();
 
 
+
+/*------------------------------ Popup ------------------------------*/
+(() =>
+{
+    const popup = document.querySelector(".popup");
+    const closePopup = document.querySelector(".popup-close");
+
+    window.addEventListener("load", () =>
+    {
+        setTimeout(() => { popup.classList.add("show"); }, 3000);
+    });
+
+    closePopup.addEventListener("click", () =>
+    {
+        popup.classList.remove("show");
+    });
+})();

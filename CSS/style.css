@@ -1524,7 +1524,7 @@ Popup
         padding: 0.8rem 1.2rem;
     }
 
-    .right-content
+    .popup-right
     {
         width: 100%;
     }
@@ -1699,3 +1699,19 @@ Popup
         font-size: 1.3rem;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
