@@ -1346,6 +1346,7 @@ Popup
     height: 55rem;
     margin: 0 auto;
     transform: translate(-50%, -50%);
+    border-radius: 1rem;
     padding: 1.6rem;
     display: table;
     overflow: hidden;
@@ -1361,16 +1362,18 @@ Popup
     top: 1rem;
     right: 1rem;
     font-size: 3rem;
-    padding: 1.2rem 1.6rem;
+    padding: 1rem 1.4rem;
     background-color: var(--grey-alt);
     border-radius: 50%;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .popup-close:hover
 {
     background-color: var(--red);
     color: var(--white);
+    transform: scale(1.1); 
 }
 
 .popup-left
@@ -1384,7 +1387,6 @@ Popup
 .popup-right
 {
     display: table-cell;
-    width: 50%;
     vertical-align: middle;
     padding: 3rem 5rem;
     text-align: center;
@@ -1468,7 +1470,232 @@ Popup
 
 @media only screen and (max-width: 1050px)
 {
+    .popup-content
+    {
+        height: 40rem;
+    }
 
+    .right-content
+    {
+        width: 100%;
+    }
+
+    .right-content h1
+    {
+        font-size: 3rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .right-content p
+    {
+        font-size: 1.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .popup-img img
+    {
+        width: 60rem;
+        height: 30rem;
+    }
+
+    .popup-input
+    {
+        padding: 1.6rem;
+        font-size: 1.6rem;
+    }
+
+    .popup-right .btn-submit
+    {
+        padding: 1.6rem 3rem;
+        font-size: 2rem;
+    }
 }
 
+@media only screen and (max-width: 920px)
+{
+    .popup-content
+    {
+        height: 35rem;
+    }
 
+    .popup-close
+    {
+        font-size: 2.5rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .right-content
+    {
+        width: 100%;
+    }
+
+    .right-content h1
+    {
+        font-size: 2.5rem;
+    }
+
+    .right-content p
+    {
+        font-size: 1.2rem;
+    }
+
+    .popup-img img
+    {
+        width: 60rem;
+        height: 28rem;
+    }
+
+    .popup-input
+    {
+        padding: 1.4rem;
+        font-size: 1.4rem;
+    }
+
+    .popup-right .btn-submit
+    {
+        padding: 1.4rem 2.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 740px)
+{
+    .popup-content
+    {
+        height: 30rem;
+    }
+
+    .popup-close
+    {
+        font-size: 2.5rem;
+        padding: 0.8rem 1.2rem;
+    }
+
+    .right-content
+    {
+        width: 100%;
+    }
+
+    .right-content h1
+    {
+        font-size: 2rem;
+    }
+
+    .right-content p
+    {
+        font-size: 1rem;
+    }
+
+    .popup-input
+    {
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .popup-right .btn-submit
+    {
+        padding: 1.2rem 2.3rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 650px)
+{
+    .popup-left
+    {
+        display: none;
+    }
+
+    .right-content
+    {
+        width: 100%;
+    }
+
+    .right-content h1
+    {
+        font-size: 3rem;
+    }
+
+    .right-content p
+    {
+        font-size: 1.6rem;
+    }
+
+    .popup-input
+    {
+        padding: 1.8rem;
+        font-size: 1.8rem;
+    }
+
+    .popup-right .btn-submit
+    {
+        padding: 1.6rem 3rem;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .right-content
+    {
+        width: 100%;
+    }
+
+    .right-content h1
+    {
+        font-size: 2.5rem;
+    }
+
+    .right-content p
+    {
+        font-size: 1.2rem;
+    }
+
+    .popup-input
+    {
+        padding: 1.4rem;
+        font-size: 1.4rem;
+    }
+
+    .popup-right .btn-submit
+    {
+        padding: 1.4rem 2.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 420px)
+{
+    .popup-right
+    {
+        padding: 3rem 1rem;
+        margin: 0 auto;
+    }
+
+    .popup-close
+    {
+        font-size: 2rem;
+    }
+
+    .right-content h1
+    {
+        font-size: 2rem;
+    }
+
+    .right-content p
+    {
+        font-size: 1.2rem;
+    }
+
+    .popup-input
+    {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
+
+    .popup-right .btn-submit
+    {
+        padding: 1.2rem 2.3rem;
+        font-size: 1.3rem;
+    }
+}
