@@ -1775,4 +1775,29 @@ Footer
 /*-------------------
 To Top
 -------------------*/
+.to-top
+{
+    position: fixed;
+    top: 72rem;
+    right: 3rem;
+    font-size: 5rem;
+    text-decoration: none;
+    opacity: 0;
+    transition: all .4s;
+}
 
+.to-top.active 
+{
+    top: 62rem;
+    opacity: 1;
+}
+
+.to-top i
+{
+    color: var(--yellow);
+}
+
+.to-top i:hover
+{
+    color: var(--red);
+}
