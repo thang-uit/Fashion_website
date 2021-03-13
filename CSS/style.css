@@ -98,6 +98,73 @@ img
 
 
 /*-------------------
+Social
+-------------------*/
+.social-call
+{
+    line-height: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.social-call a
+{
+    margin: 0 1rem;
+}
+
+.social-call .icon-fb:hover
+{
+    color: #1877F2;
+}
+
+.social-call .icon-ig:hover
+{
+    color: #ff2a8d;
+}
+
+.social-call .icon-yt:hover
+{
+    color: #ff0000;
+}
+
+.social-call .phone
+{
+    margin-left: 3rem; 
+}
+
+@media only screen and (max-width: 350px)
+{
+    .social-call
+    {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 300px)
+{
+    .social-call
+    {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 260px)
+{
+    .social-call a
+    {
+        margin: 0 0.3rem;
+    }
+}
+
+
+
+/*-------------------
 Navigation
 -------------------*/
 .navigation 
