@@ -1879,6 +1879,14 @@ Serach-box
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1100px)
+{
+    .search-box .search-input
+    {
+        margin-left: 1rem;
+    }
+}
+
 @media only screen and (max-width: 500px)
 {
     .search-box .search-input
