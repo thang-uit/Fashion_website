@@ -75,3 +75,27 @@
         }
     });
 })();
+
+
+
+/*------------------------------ Search bar ------------------------------*/
+(() =>
+{
+    const searchIcon = document.querySelector(".search-icon"),
+    searchBar = document.querySelector(".search-bar"),
+    searchCloseBtn = document.querySelector(".search-close");
+
+    searchIcon.addEventListener("click", () =>
+    {
+        searchBar.classList.toggle("show");
+    });
+
+    searchCloseBtn.addEventListener("click", () =>
+    {
+        if(searchBar.classList.contains("show"))
+        {
+            searchBar.classList.remove("show");
+            return;
+        }
+    });
+})();

@@ -184,7 +184,7 @@ Navigation
     justify-content: space-between;
 }
 
-.fix-nav
+.navigation.fix-nav
 {
     position: fixed;
     top: 0;
@@ -192,6 +192,7 @@ Navigation
     width: 100%;
     background-color: var(--white);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
     z-index: 999999;
 }
 
@@ -275,7 +276,7 @@ Navigation
     transition: all 0.3s ease-in-out;
 }
 
-.navigation .nav-icons .numbercart
+/* .navigation .nav-icons .numbercart
 {
     position: absolute;
     width: 2.5rem;
@@ -291,7 +292,7 @@ Navigation
     align-items: center;
     text-align: center;
     z-index: 1;
-}
+} */
 
 .navigation .nav-icons span:hover
 {
@@ -435,14 +436,38 @@ Navigation
         margin: 0 -4rem;
     }
 
-    .navigation .nav-icons
+    .navigation .nav-icons span
     {
-        display: none;
+        font-size: 1.2rem;
+        padding: 0.3rem 0.7rem;
     }
 
     .navigation .nav-center .logo
     {
         font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 300px)
+{
+    .navigation .nav-icons span:not(:last-child)
+    {
+        margin: 0;
+    }
+
+    .navigation .nav-icons span
+    {
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 280px)
+{
+    .navigation .nav-icons span
+    {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.7rem;
     }
 }
 
@@ -1777,6 +1802,116 @@ Popup
 
 
 /*-------------------
+Serach-box
+-------------------*/
+.search-bar
+{
+    position: fixed;
+    background-color: var(--grey-alt);
+    width: 100%;
+    height: 55%;
+    bottom: -45rem;
+    overflow-y: scroll;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: all 0.4s;
+    z-index: 999999;
+}
+
+.search-bar.show
+{
+    bottom: 0rem;
+    opacity: 1;
+}
+
+.search-close
+{
+    float: right;
+    font-size: 4rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+
+.search-close::after
+{
+    position: absolute;
+    content: "";
+    top: 0.8rem;
+    right: 0.9rem;
+    padding: 1.6rem;
+    border: 4px solid var(--black);
+    transition: transform 0.5s;
+    transform: scale(0);
+}
+
+.search-close:hover::after
+{
+    transform: scale(1);
+}
+
+.search-box form
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    clear: both;
+}
+
+.search-box .search-input
+{
+    width: 90%;
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 1.5rem 0rem 1.5rem 2rem; 
+    font-size: 2rem;
+}
+
+.search-box .search-btn
+{
+    background-color: #f5f5f5;
+    border: none;
+    outline: none;
+    padding: 1.5rem 2rem; 
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px)
+{
+    .search-box .search-input
+    {
+        padding: 1.5rem 0rem 1.5rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .search-box .search-btn
+    {
+        padding: 1.5rem 2rem; 
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 350px)
+{
+    .search-box .search-input
+    {
+        padding: 1.5rem 0rem 1.5rem 2rem;
+        font-size: 1.3rem;
+    }
+
+    .search-box .search-btn
+    {
+        padding: 1.5rem 2rem; 
+        font-size: 1.3rem;
+    }
+}
+
+
+
+/*-------------------
 Footer
 -------------------*/
 .footer 
@@ -1856,6 +1991,7 @@ To Top
     text-decoration: none;
     opacity: 0;
     transition: all .4s;
+    z-index: 99;
 }
 
 .to-top.active 
