@@ -24,16 +24,15 @@
     
 
     // Fix navbar
-    const header = document.querySelector(".header");
     window.addEventListener("scroll", () =>
     {
         if(window.pageYOffset > 1)
         {
-            header.classList.add("fix-nav");
+            navigation.classList.add("fix-nav");
         }
         else
         {
-            header.classList.remove("fix-nav");
+            navigation.classList.remove("fix-nav");
         }
     });
 })();
