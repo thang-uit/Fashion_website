@@ -1879,6 +1879,7 @@ Serach-box
 {
     .search-box .search-input
     {
+        margin-left: 0.9rem;
         padding: 1.5rem 0rem 1.5rem 2rem;
         font-size: 1.5rem;
     }
@@ -1894,13 +1895,11 @@ Serach-box
 {
     .search-box .search-input
     {
-        padding: 1.5rem 0rem 1.5rem 2rem;
         font-size: 1.3rem;
     }
 
     .search-box .search-btn
     {
-        padding: 1.5rem 2rem; 
         font-size: 1.3rem;
     }
 }
