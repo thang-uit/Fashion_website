@@ -276,6 +276,11 @@ Navigation
     transition: all 0.3s ease-in-out;
 }
 
+.nav-icons .numbercart
+{
+    font-weight: 700;
+}
+
 /* .navigation .nav-icons .numbercart
 {
     position: absolute;
