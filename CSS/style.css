@@ -59,6 +59,7 @@ li, ul
 
 a
 {
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -265,43 +266,40 @@ Navigation
     margin-right: 0.5rem;
 }
 
-.navigation .nav-icons span
+.navigation .nav-icons a i
+{
+    font-size: 2rem;
+    margin: 0 0.8rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation .nav-icons .fa-shopping-bag
 {
     position: relative;
-    font-size: 1.6rem;
-    border-radius: 50%;
-    border: 1px solid var(--grey);
-    padding: 0.3rem 0.7rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
 .nav-icons .numbercart
 {
-    font-weight: 700;
-}
-
-/* .navigation .nav-icons .numbercart
-{
     position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    top: -1.2rem;
+    right: -2rem;
     width: 2.5rem;
     height: 2.5rem;
-    border: 1px solid var(--black);
-    background-color: var(--black);
-    color: var(--white);
-    font-size: 1.2rem;
     border-radius: 50%;
-    transform: translate(400%, -150%);
+    background-color: var(--yellow);
+    color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    z-index: 1;
-} */
+    overflow: hidden;
+}
 
-.navigation .nav-icons span:hover
+.navigation .nav-icons a:hover i
 {
-    background-color: var(--yellow);
+    transform: scale(1.2);
 }
 
 .navigation .hamburger
@@ -409,18 +407,6 @@ Navigation
         padding: 1rem 2rem;
     }
 
-    /* .navigation .nav-icons span
-    {
-        display: none;
-        border: none;
-        font-size: 1.6rem;
-    } */
-
-    /* .navigation .nav-icons span:last-child
-    {
-        display: block;
-    } */
-
     body.show::before
     {
         content: "";
@@ -441,38 +427,35 @@ Navigation
         margin: 0 -4rem;
     }
 
-    .navigation .nav-icons span
-    {
-        font-size: 1.2rem;
-        padding: 0.3rem 0.7rem;
-    }
-
     .navigation .nav-center .logo
     {
         font-size: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 300px)
+@media only screen and (max-width: 340px)
 {
-    .navigation .nav-icons span:not(:last-child)
+    .navigation .nav-icons a i
     {
-        margin: 0;
+        font-size: 2rem;
+        margin: 0 0.2rem;
     }
+}
 
-    .navigation .nav-icons span
+@media only screen and (max-width: 320px)
+{
+    .navigation .nav-icons a i
     {
-        font-size: 1rem;
-        padding: 0.3rem 0.7rem;
+        font-size: 1.5rem;
+        margin: 0 0.1rem;
     }
 }
 
 @media only screen and (max-width: 280px)
 {
-    .navigation .nav-icons span
+    .navigation .nav-icons
     {
-        font-size: 0.8rem;
-        padding: 0.3rem 0.7rem;
+        display: none;
     }
 }
 
