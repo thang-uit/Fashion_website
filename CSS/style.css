@@ -1986,12 +1986,12 @@ To Top
     text-decoration: none;
     opacity: 0;
     transition: all .4s;
-    z-index: 99;
+    z-index: 991;
 }
 
 .to-top.active 
 {
-    top: 62rem;
+    top: 63rem;
     opacity: 1;
 }
 
