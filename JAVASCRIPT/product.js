@@ -9,9 +9,9 @@
     }
 
     // Display products
-    const displayProducts = (products, center) =>
+    const displayProducts = function(products, center)
     {
-        let display = products.map(({title, image, price}) => 
+        let display = products.map(({title, image, price}) =>
         `
             <div class="product-box">
                 <div class="product-header">
