@@ -54,6 +54,11 @@
     {
         popup.classList.remove("show");
     });
+
+    popup.addEventListener("click", () =>
+    {
+        popup.classList.remove("show");
+    });
 })();
 
 
