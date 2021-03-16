@@ -43,6 +43,7 @@
 (() =>
 {
     const popup = document.querySelector(".popup");
+    const popupContent = document.querySelector(".popup-content");
     const closePopup = document.querySelector(".popup-close");
 
     window.addEventListener("load", () =>
@@ -55,9 +56,13 @@
         popup.classList.remove("show");
     });
 
-    popup.addEventListener("click", () =>
+    popup.addEventListener("click", (event) =>
     {
-        popup.classList.remove("show");
+        if(event.target.getAttribute("data-content") === 'popup')
+        {
+            popup.classList.remove("show");
+            return;
+        }
     });
 })();
 
